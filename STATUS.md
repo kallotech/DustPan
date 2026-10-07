@@ -1,6 +1,6 @@
 # Project status — DustPan
 
-**Updated:** 2026-10-06
+**Updated:** 2026-10-07
 
 ## macOS app
 
@@ -20,7 +20,7 @@
 
 **Folder-scoped Unhide all (2026-10-05):** Added an `Unhide all (n)` toolbar action for paths hidden directly within the currently selected source folder (`desktopURL`). It removes only those app-preference entries; it does not touch the files or hidden entries in other folders. The fresh Xcode build and `swift build` passed. The updated app was installed; the prior app copy was preserved recoverably in Trash. Existing hidden-item preferences were left unchanged. The updated controls were not visually inspected.
 
-**GitHub publication readiness (2026-10-07):** The repository is private while the publication cleanup and review are in progress. Machine-specific paths and personal Desktop names have been removed from the current project documentation, and the older history is scheduled to be replaced before public release. Destination symlink checks and file-identity checks for Undo are covered by automated tests. Public visibility is pending successful source, history, test, and Xcode build checks.
+**Public release and security review (2026-10-07):** [kallotech/DustPan](https://github.com/kallotech/DustPan) is public. The prior two-commit history was replaced with a single root snapshot, removing machine-specific paths and private Desktop details from the published history. A current-tree scan and the pushed-tree scan found no local paths, credential-shaped strings, or private-key markers; the app's existing bundle identifier remains unchanged to preserve its installed identity. The standard security scan's destination-symlink and Undo-replacement findings were fixed and covered by four passing tests. `swift test` passed, and the Xcode Release build succeeded from a temporary copy. The review did not exercise GUI move/undo flows or use an independent reviewer. The Xcode target still disables App Sandbox in Debug and Release; this source publication is not a signed or hardened app distribution. No software license has been added.
 
 ## Daily Desktop workflow
 
