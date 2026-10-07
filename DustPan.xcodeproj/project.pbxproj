@@ -1,0 +1,158 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+	A11000000000000000000001 /* DustPanApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = A11000000000000000000002 /* DustPanApp.swift */; };
+		A11000000000000000000011 /* AppAssets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = A11000000000000000000012 /* AppAssets.xcassets */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		A11000000000000000000002 /* DustPanApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sources/DustPan/DustPanApp.swift; sourceTree = "<group>"; };
+		A11000000000000000000003 /* DustPan.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = DustPan.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		A11000000000000000000012 /* AppAssets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = AppAssets.xcassets; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		A11000000000000000000004 /* Frameworks */ = {isa = PBXFrameworksBuildPhase; buildActionMask = 2147483647; files = (); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		A11000000000000000000005 = {
+			isa = PBXGroup;
+			children = (
+				A11000000000000000000002 /* DustPanApp.swift */,
+				A11000000000000000000012 /* AppAssets.xcassets */,
+				A11000000000000000000006 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		A11000000000000000000006 /* Products */ = {
+			isa = PBXGroup;
+			children = (A11000000000000000000003 /* DustPan.app */,);
+			name = Products;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		A11000000000000000000007 /* DustPan */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = A11000000000000000000008 /* Build configuration list for PBXNativeTarget "DustPan" */;
+			buildPhases = (
+				A11000000000000000000009 /* Sources */,
+				A11000000000000000000004 /* Frameworks */,
+				A1100000000000000000000A /* Resources */,
+			);
+			buildRules = ();
+			dependencies = ();
+			name = DustPan;
+			productName = DustPan;
+			productReference = A11000000000000000000003 /* DustPan.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		A1100000000000000000000B /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastUpgradeCheck = 2700;
+				TargetAttributes = {A11000000000000000000007 = {CreatedOnToolsVersion = 27.0; };};
+			};
+			buildConfigurationList = A1100000000000000000000C /* Build configuration list for PBXProject "DustPan" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			mainGroup = A11000000000000000000005;
+			productRefGroup = A11000000000000000000006 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (A11000000000000000000007 /* DustPan */,);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		A1100000000000000000000A /* Resources */ = {isa = PBXResourcesBuildPhase; buildActionMask = 2147483647; files = (A11000000000000000000011 /* AppAssets.xcassets in Resources */,); runOnlyForDeploymentPostprocessing = 0; };
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		A11000000000000000000009 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (A11000000000000000000001 /* DustPanApp.swift in Sources */,);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		A1100000000000000000000D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "DustPan displays Desktop files so you can choose where to move them.";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nassimandalas.DustPan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Debug;
+		};
+		A1100000000000000000000E /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CODE_SIGN_IDENTITY = "-";
+				CODE_SIGN_STYLE = Manual;
+				ENABLE_APP_SANDBOX = NO;
+				GENERATE_INFOPLIST_FILE = YES;
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.utilities";
+				INFOPLIST_KEY_NSDesktopFolderUsageDescription = "DustPan displays Desktop files so you can choose where to move them.";
+				MACOSX_DEPLOYMENT_TARGET = 13.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.nassimandalas.DustPan;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = macosx;
+				SWIFT_VERSION = 5.0;
+			};
+			name = Release;
+		};
+		A1100000000000000000000F /* Debug */ = {isa = XCBuildConfiguration; buildSettings = { }; name = Debug; };
+		A11000000000000000000010 /* Release */ = {isa = XCBuildConfiguration; buildSettings = { }; name = Release; };
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		A11000000000000000000008 /* Build configuration list for PBXNativeTarget "DustPan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (A1100000000000000000000D /* Debug */, A1100000000000000000000E /* Release */,);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		A1100000000000000000000C /* Build configuration list for PBXProject "DustPan" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (A1100000000000000000000F /* Debug */, A11000000000000000000010 /* Release */,);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = A1100000000000000000000B /* Project object */;
+}
